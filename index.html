@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="w-full h-screen bg-green-100">
+
+    <div class="w-2/3 h-[500px] bg-white mx-auto mt-[50px] rounded-lg p-8 ">
+        <h1 class="text-3xl text-extrabold">Contact Us</h1>
+
+        <form>
+            <div class="flex gap-8 mx-auto ">
+                <div class="flex flex-col gap-2 mt-2">
+                    <label for="firstName">First Name</label>
+                    <input id="firstName" 
+                    class="border w-[250px] h-[35px] p-2 rounded-lg"/>
+                </div>
+                <div class="flex flex-col gap-2 mt-2">
+                    <label for="lastName">Last Name</label>
+                    <input id="lastName" 
+                    class="border w-[250px] h-[35px] p-2 rounded-lg"/>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-2 mt-2">
+                <label for="email">Email Address</label>
+                <input id="email" 
+                class="border w-[550px] h-[35px] p-3 rounded-lg"/>
+            
+            </div>
+
+            <div class="flex flex-col gap-2 mt-2">
+                <label>Query Type</label>
+                <div class="flex flex-col gap-2 mt-2 flex-row gap-2">
+                    <label class="border w-[250px] h-[35px] p-3 mx-auto rounded-lg ">
+                        <input type="radio" name="queryType" />
+                        General Enquiry
+                    </label>
+                    <label class="border w-[250px] h-[35px] p-3 mx-auto rounded-lg">
+                        <input type="radio" name="queryType" />
+                        Support Request
+                    </label>
+                </div>
+            </div>
+
+            <div class="group">
+                <label for="message">Message</label>
+                <textarea id="message" cols="50" rows="5" class="border w-[550px] h-[100px] p-3 rounded-lg"></textarea>
+            </div>
+
+            <div class="group">
+                <div class="consent-group">
+                    <input type="checkbox" id="consent" />
+                    <label for="consent">I consent to being contacted by the team</label>
+                </div>
+            </div>
+
+            <button class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
